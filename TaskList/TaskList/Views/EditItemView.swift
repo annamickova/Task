@@ -29,13 +29,10 @@ struct EditItemView: View {
                 TLButton(title: "Save",
                          backgroundColor: .purple) {
                         if itemToEdit.canSave{
-                            //itemToEdit.edit(id: , item: <#T##TaskListItem#>)
-                            // if policka neprazdna ulozi
                             itemToEdit.save()
                             editItemPresented = false
                         }
                     else{
-                        // ukonci, kdyz neprobehly zadne zmeny
                         editItemPresented = false
                     }
                 }
